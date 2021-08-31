@@ -344,7 +344,7 @@ MonoBehaviour:
     - Name: stateMachine
       Entry: 10
       Data: 0
-  maxHealth: 30
+  maxHealth: 90
   animator: {fileID: 1659202401}
 --- !u!23 &1659202398
 MeshRenderer:

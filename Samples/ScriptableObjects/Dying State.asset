@@ -24,20 +24,11 @@ MonoBehaviour:
     - Name: onEnterActions
       Entry: 7
       Data: 0|VideoJames.ScriptableFSM.IAction`1[[VideoJames.ScriptableFSM.Samples.ICharacter,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]][],
-        Assembly-CSharp
+        VideoJames.FSM.Samples, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]][],
+        VideoJames.FSM
     - Name: 
       Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 1|VideoJames.ScriptableFSM.Samples.SetCharacterAnimatorParameter, Assembly-CSharp
-    - Name: parameterKey
-      Entry: 1
-      Data: Die
-    - Name: 
-      Entry: 8
-      Data: 
+      Data: 0
     - Name: 
       Entry: 13
       Data: 
@@ -46,9 +37,9 @@ MonoBehaviour:
       Data: 
     - Name: onUpdateActions
       Entry: 7
-      Data: 2|VideoJames.ScriptableFSM.IAction`1[[VideoJames.ScriptableFSM.Samples.ICharacter,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]][],
-        Assembly-CSharp
+      Data: 1|VideoJames.ScriptableFSM.IAction`1[[VideoJames.ScriptableFSM.Samples.ICharacter,
+        VideoJames.FSM.Samples, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]][],
+        VideoJames.FSM
     - Name: 
       Entry: 12
       Data: 0
@@ -60,9 +51,9 @@ MonoBehaviour:
       Data: 
     - Name: onExitActions
       Entry: 7
-      Data: 3|VideoJames.ScriptableFSM.IAction`1[[VideoJames.ScriptableFSM.Samples.ICharacter,
-        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]][],
-        Assembly-CSharp
+      Data: 2|VideoJames.ScriptableFSM.IAction`1[[VideoJames.ScriptableFSM.Samples.ICharacter,
+        VideoJames.FSM.Samples, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]][],
+        VideoJames.FSM
     - Name: 
       Entry: 12
       Data: 0
