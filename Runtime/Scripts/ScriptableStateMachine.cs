@@ -8,10 +8,10 @@ namespace VideoJames.ScriptableFSM
     public abstract class ScriptableStateMachine<T> : SerializedScriptableObject, IStateMachine<T> where T : IHaveState
     {
         public string Name => "No name";
-        [SerializeField] private IState<T> initialState;
-        [SerializeField, ListDrawerSettings(ListElementLabelName = "Name"), HideReferenceObjectPicker] private ITransition<T>[] transitions = new ITransition<T>[0];
+        [SerializeField] protected IState<T> initialState;
+        [SerializeField, ListDrawerSettings(ListElementLabelName = "Name"), HideReferenceObjectPicker] protected ITransition<T>[] transitions = new ITransition<T>[0];
 
-        [NonSerialized] private IState<T> currentState;
+        [NonSerialized] protected IState<T> currentState;
 
         public virtual void Init(T stateHaver)
         {
@@ -34,7 +34,7 @@ namespace VideoJames.ScriptableFSM
             }
         }
 
-        protected virtual void SetState(T stateHaver, IState<T> newState)
+        public virtual void SetState(T stateHaver, IState<T> newState)
         {
             currentState?.Exit(stateHaver);
             currentState = newState;

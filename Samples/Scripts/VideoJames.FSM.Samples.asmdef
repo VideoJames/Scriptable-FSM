@@ -1,0 +1,16 @@
+{
+    "name": "VideoJames.FSM.Samples",
+    "rootNamespace": "",
+    "references": [
+        "GUID:841ff505b873ced4cb263090551db6a1"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
