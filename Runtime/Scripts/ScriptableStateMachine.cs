@@ -1,7 +1,6 @@
 
 using Sirenix.OdinInspector;
 using System;
-using System.Collections.Generic;
 using UnityEngine;
 namespace VideoJames.ScriptableFSM
 {
@@ -20,6 +19,7 @@ namespace VideoJames.ScriptableFSM
 
         public virtual void Tick(T stateHaver, float deltaTime)
         {
+            
             currentState.Tick(stateHaver, deltaTime);
             foreach (ITransition<T> transition in transitions)
             {
@@ -28,8 +28,8 @@ namespace VideoJames.ScriptableFSM
                     if (transition.HasMetConditions(stateHaver))
                     {
                         SetState(stateHaver, transition.ToState);
+                        break;
                     }
-                    break;
                 }
             }
         }
