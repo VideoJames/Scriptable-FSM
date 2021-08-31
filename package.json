@@ -1,5 +1,5 @@
 {
-  "name": "com.VideoJames.ScriptableFSM",
+  "name": "com.videojames.scriptable-fsm",
   "version": "1.0.0",
   "displayName": "Scriptable FSM",
   "description": "This package provides a framework to create and FSM using scriptable objects. It also requires the use of Odin inspector."
