@@ -26,6 +26,7 @@ namespace VideoJames.ScriptableFSM.Samples
         private void Update()
         {
             stateMachine.Tick(this, Time.deltaTime);
+            Health -= 10;
         }
     }
 }

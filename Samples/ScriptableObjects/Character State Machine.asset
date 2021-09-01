@@ -33,11 +33,14 @@ MonoBehaviour:
         VideoJames.FSM
     - Name: 
       Entry: 12
-      Data: 2
+      Data: 1
     - Name: 
       Entry: 7
       Data: 1|VideoJames.ScriptableFSM.Transition`1[[VideoJames.ScriptableFSM.Samples.ICharacter,
         VideoJames.FSM.Samples]], VideoJames.FSM
+    - Name: fromAnyState
+      Entry: 5
+      Data: false
     - Name: fromState
       Entry: 10
       Data: 0
@@ -58,42 +61,6 @@ MonoBehaviour:
     - Name: lowHealthThreshold
       Entry: 3
       Data: 60
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 4|VideoJames.ScriptableFSM.Transition`1[[VideoJames.ScriptableFSM.Samples.ICharacter,
-        VideoJames.FSM.Samples]], VideoJames.FSM
-    - Name: fromState
-      Entry: 10
-      Data: 0
-    - Name: toState
-      Entry: 10
-      Data: 0
-    - Name: conditions
-      Entry: 7
-      Data: 5|VideoJames.ScriptableFSM.ICondition`1[[VideoJames.ScriptableFSM.Samples.ICharacter,
-        VideoJames.FSM.Samples, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]][],
-        VideoJames.FSM
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 6|VideoJames.ScriptableFSM.Samples.CharacterLowHealthCondition, VideoJames.FSM.Samples
-    - Name: lowHealthThreshold
-      Entry: 3
-      Data: 70
     - Name: 
       Entry: 8
       Data: 

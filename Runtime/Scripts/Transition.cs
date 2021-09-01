@@ -1,6 +1,5 @@
 
 using Sirenix.OdinInspector;
-using System;
 using UnityEngine;
 
 namespace VideoJames.ScriptableFSM
@@ -8,10 +7,12 @@ namespace VideoJames.ScriptableFSM
     public class Transition<T> : ITransition<T> where T : IHaveState
     {
         public string Name => GetName();
+        public bool FromAnyState => fromAnyState;
         public IState<T> FromState => fromState;
         public IState<T> ToState => toState;
 
-        [SerializeField, LabelText("From")] private IState<T> fromState;
+        [SerializeField] private bool fromAnyState;
+        [SerializeField, LabelText("From"), HideIf("fromAnyState")] private IState<T> fromState;
         [SerializeField, LabelText("To")] private IState<T> toState;
         [SerializeField, ListDrawerSettings(ListElementLabelName = "Name"), HideReferenceObjectPicker] private ICondition<T>[] conditions = new ICondition<T>[0];
 
@@ -33,7 +34,7 @@ namespace VideoJames.ScriptableFSM
         #region Inspector Name
         private string GetName()
         {
-            var from = FromState != null ? FromState.Name : "NULL";
+            var from = fromAnyState ? "Any state" : FromState != null ? FromState.Name : "NULL";
             var to = ToState != null ? ToState.Name : "NULL";
             var conditionNames = conditions != null && conditions.Length > 0 ? "|| " : "NO CONDITIONS";
 

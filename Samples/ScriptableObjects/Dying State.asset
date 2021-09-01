@@ -28,7 +28,28 @@ MonoBehaviour:
         VideoJames.FSM
     - Name: 
       Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 7
+      Data: 1|VideoJames.ScriptableFSM.Samples.SetCharacterHealth, VideoJames.FSM.Samples
+    - Name: newHealth
+      Entry: 3
+      Data: 90
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 2|VideoJames.ScriptableFSM.Samples.LogMessage, VideoJames.FSM.Samples
+    - Name: logLevel
+      Entry: 3
       Data: 0
+    - Name: message
+      Entry: 1
+      Data: Entered Dying
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 13
       Data: 
@@ -37,7 +58,7 @@ MonoBehaviour:
       Data: 
     - Name: onUpdateActions
       Entry: 7
-      Data: 1|VideoJames.ScriptableFSM.IAction`1[[VideoJames.ScriptableFSM.Samples.ICharacter,
+      Data: 3|VideoJames.ScriptableFSM.IAction`1[[VideoJames.ScriptableFSM.Samples.ICharacter,
         VideoJames.FSM.Samples, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]][],
         VideoJames.FSM
     - Name: 
@@ -51,7 +72,7 @@ MonoBehaviour:
       Data: 
     - Name: onExitActions
       Entry: 7
-      Data: 2|VideoJames.ScriptableFSM.IAction`1[[VideoJames.ScriptableFSM.Samples.ICharacter,
+      Data: 4|VideoJames.ScriptableFSM.IAction`1[[VideoJames.ScriptableFSM.Samples.ICharacter,
         VideoJames.FSM.Samples, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]][],
         VideoJames.FSM
     - Name: 
