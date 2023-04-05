@@ -9,7 +9,7 @@ namespace VideoJames.ScriptableFSM
         public string Name => "No name";
 
         [SerializeField] protected IState<T> initialState;
-        [SerializeField, ListDrawerSettings(ListElementLabelName = "Name"), HideReferenceObjectPicker] protected ITransition<T>[] transitions = new ITransition<T>[0];
+        [SerializeField, ListDrawerSettings(ListElementLabelName = "Name", Expanded =true), HideReferenceObjectPicker] protected ITransition<T>[] transitions = new ITransition<T>[0];
 
         [NonSerialized] protected IState<T> currentState;
 

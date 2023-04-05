@@ -4,17 +4,18 @@ using UnityEngine;
 
 namespace VideoJames.ScriptableFSM
 {
+    [InlineEditor(InlineEditorObjectFieldModes.Hidden)]
     public class Transition<T> : ITransition<T> where T : IHaveState
     {
         public string Name => GetName();
         public bool FromAnyState => fromAnyState;
         public IState<T> FromState => fromState;
         public IState<T> ToState => toState;
-
+        
         [SerializeField] private bool fromAnyState;
         [SerializeField, LabelText("From"), HideIf("fromAnyState")] private IState<T> fromState;
         [SerializeField, LabelText("To")] private IState<T> toState;
-        [SerializeField, ListDrawerSettings(ListElementLabelName = "Name"), HideReferenceObjectPicker] private ICondition<T>[] conditions = new ICondition<T>[0];
+        [SerializeField, ListDrawerSettings(ListElementLabelName = "Name", Expanded = true), HideReferenceObjectPicker] private ICondition<T>[] conditions = new ICondition<T>[0];
 
         /// <summary>
         /// Checks all conditions and returns false if any are not met, otherwise returns true.
@@ -36,7 +37,7 @@ namespace VideoJames.ScriptableFSM
         {
             var from = fromAnyState ? "Any state" : FromState != null ? FromState.Name : "NULL";
             var to = ToState != null ? ToState.Name : "NULL";
-            var conditionNames = conditions != null && conditions.Length > 0 ? "|| " : "NO CONDITIONS";
+            var conditionNames = conditions != null && conditions.Length > 0 ? "\n " : "NO CONDITIONS";
 
             for (var i = 0; i < conditions.Length; i++)
             {
